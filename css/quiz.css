@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+html, body {
+    height:100%;
+		
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial";
+	background-color: #0054ff; /*fundo em degrade		
+	/* background-image: linear-gradient(#548cff,#0054ff,#000e56); /fundo em degrade/	*/
+} 
+span{
+	position: absolute;
+	top:12px;
+	
+}
+
+h1{
+	
+	font-size: 22pt;
+	font-family: "Cursive";
+}
+
+h3{
+	font-size: 25pt;
+	text-align: center;
+	margin: 0;
+}
+
+
+.dadosAluno {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 12.5rem;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adicionando uma transição para um efeito suave */
+	
+}
+.resposta {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 95%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 30px  10px 0px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adicionando uma transição para um efeito suave */
+	
+}
+.hidden-radio {
+    display: none;
+}
+
+.botao{
+	width: 75px;
+	margin-top: 10px;
+}
+
+.resposta:hover {
+    background-color: #959191;
+    color: #fff; /* Adicionando uma mudança na cor do texto ao passar o mouse */
+}
+.hidden-radio:checked + .resposta {
+    background-color: #959191; /* Cor de fundo quando selecionado */
+    color: #fff; /* Cor do texto quando selecionado */
+}
+.btnInfer{
+	display: flex;
+	width: 100%;
+	justify-content: space-between; /* Distribuir botões à esquerda e à direita */
+	background: #fbebaf;
+	max-width: 450px;
+	margin: 50px auto;
+	border-radius: 10px;
+	padding: 10px 30px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.30);
+}
+
+#btnConfirm{
+	text-align: center;
+	cursor: pointer;
+	width: 100px;
+	float: right;
+	margin: 5px 0;
+	
+	
+}
+
+.btnInicio{
+	float: right;
+	width: 100px;
+}
+
+.quiz{
+	background: #fbebaf;
+	display: flex;
+    flex-direction: column;
+	max-width: 450px;
+	margin: 50px auto 50px;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.30);
+}
+.quiz h1{
+	border-bottom:1px solid #333;
+	padding-bottom: 30px;
+	
+}
+
+.quiz2 {
+    background: #fbebaf;
+    
+    max-width: 460px;
+    margin: 50px auto 50px;
+    border-radius: 10px;
+    padding: 20px 30px 50px 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.30);
+}
+.quiz2 h1{
+	border-bottom:1px solid #333;
+	padding-bottom: 30px;
+	
+}
+
+.pergunta {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.btn:hover{
+	background: #222;
+	color: #fff;
+}

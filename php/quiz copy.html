@@ -1,0 +1,146 @@
+<!DOCTYPE>
+<HTML lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width initial-scale=0.5">
+		<link rel="stylesheet" type="text/css" href="../css/quiz.css"/>
+		
+	</head>
+	<script language="javascript" src="../js/quiz.js"></script>
+	<body>
+		<title>
+			Quiz Smile
+		</title>
+			
+			<div class = "quiz"> <!-- Div onde ficará as perguntas -->
+				<h1>"Ola! Sou o smile!"<span style='font-size:100px;'>&#128512;</span></h1> 
+		
+					<div id="divpergunta1" style="display: block"> <!-- Cada pergunta tera uma div e cada div tera botoes programados. -->
+						<h2>1) O que acha de conversar um pouco? </h2>
+						<button onclick="btn1()">Sim</botton>
+						<button onclick="btn2()">Tanto faz</botton>
+						<button onclick="btn3()">Não estou afim</botton>
+						
+					</div> 
+					
+					<div id="divpergunta2">
+						<h2>2) Então vamos conversar! Para que eu possa te conhecer um pouquinho melhor,Como você se chama?</h2>
+						<input type="text" id="nomeAluno" placeholder="Digite seu nome"/>
+						<button onclick="enviarNome()">Enviar</button>
+						
+					</div>
+					
+					<div id="divescolha3">
+						<h2>Você esta bem? Esta com problemas?</h2>
+						<button onclick="btn1e()">Eu estou bem, só não quero conversar</botton>
+						<button onclick="btn2e()">Prefiro resolver as coisas sozinho(a)</botton>
+						<button onclick="btn3e()">Pensando bem...Acho que quero conversar.</botton>
+						
+					</div>
+					
+					<div id="opcao3">
+						<h2>Ah que pena! Gostaria muito de te conhecer, saiba que pode reiniciar o questionario assim que mudar de ideia ;)</h2>
+					</div>
+					
+					
+					<div id="divpergunta3">
+						<h2 id="pergunta3"></h2>
+						<input type="number" id="idadeAluno" placeholder="Digite a sua idade"></input>
+						<button type="submit" onclick="enviarIdade()">Enviar</button>
+						
+					</div>
+					
+					<div id="divpergunta4">
+						<div id="sumirbtn2">
+							<h2>4) Que bacana! <br>Eu tenho a mesma idade!<br>Estou em fase de crescimento ainda e então estou tentando me alimentar direito. Você também esta?<br>Quantas refeições você tem feito durante todo seu dia contando com os lanchinhos, almoço e janta?</h2>
+							<button onclick = "btn1p4()">De 3 a 6 refeições</button>
+							<button onclick = "btn2p4()">Menos que 3 refeições</button>
+							<button onclick = "btn3p4()">Mais de 7 refeições</button>
+						</div>
+						<div id="perg4Escolha2">
+							<h2>Eu acho que são poucas refeições...Eu ficaria com fome rsrs. Por qual motivo você tem menos que 3 refeições durante todo seu dia?</h2>
+							<button onclick = "btn1p4e2()">Meus responsáveis não tem muito dinheiro para comprar comida</button>
+							<button onclick = "btn2p4e2()">Não estou me sentindo bem ou não sinto fome</button>
+							<button onclick = "btn3p4e2()">Estou fazendo dieta por conta própria</button>
+						</div>
+						<div id="perg4Escolha3">
+							<h2>Eu normalmente como 5 refeições, mas tem dias que estou com uma fome a mais rsrs.<br>Por qual motivo você tem mais que 7 refeições durante todo o seu dia?</h2>
+							<button onclick = "btn1p4e3()">Como sempre que estou ansioso, com raiva ou triste</button>
+							<button onclick = "btn2p4e3()">Sinto muita fome</button>
+							<button onclick = "btn3p4e3()">Só como muito quando tem besteiras(batata frita, pizza, refrigerante),quando é comida saudável eu não gosto e normalmente como pouco</button>
+						</div>
+					</div>  
+					
+					<div id="divpergunta5">
+						<h2 id="caso1"></h2>
+						<h2>5) Certo, bacana mesmo é quando um colega divide um lanche que gosta com você não é mesmo?<br>Como você diria que é o seu convívio com os outros alunos da escola?</h2>
+						<button onclick = "btn1p5()">Bom</button>
+						<button onclick = "btn2p5()">Mais ou Menos</button>
+						<button onclick = "btn3p5()">Ruim</button>
+						
+			        </div>
+					<div id="perg5Escolha3">
+							<h2>Nossa, é realmente bem chato isso...<br>Oque aconteceu?</h2>
+							<button onclick="btn1p5e3()">Eles/Elas não gostam de mim e implicam comigo</button>
+							<button onclick="btn2p5e3()">Não gosto de muita amizade, prefiro ficar sozinho!</button>
+							
+							<input type="text" id="respostaAluno" placeholder="Prefiro escrever o que aconteceu"></input>
+							<button type="submit" id="btnEviarResposta" onclick="btnEnviar()">Enviar</button>
+							
+						</div>
+					
+					<div id="divpergunta6">
+						<h2>6) Acontece as vezes que temos nossas opniões e nem sempre concordamos com alguns colegas pois temos pensamentos diferentes,e as vezes as discussões ficam bem ruins.Nesse caso, quando você ofende alguém o que faz quando você nota que ofendeu essa pessoa?</h2>
+						<button onclick = "btn1p6()">Eu peço desculpas,pois vi que aquilo não foi certo</button>
+						<button onclick = "btn2p6()">Ele/Ela mereceu! Então eu não ligo se ess pessoa vai ficar triste</button>
+						<button onclick = "btn3p6()">Finjo que nada aconteceu e tento agir naturalmente</button>
+					</div>
+					
+					<div id="divpergunta7">
+						<h2>7) Essa situação é realmente complicada não é mesmo!?E quando a pessoa te ofende em público,como você reage?</h2>
+						<button onclick="btn1p7()">Fico com vergonha e quero sumir daquele lugar o mais rápido possível</button>
+						<button onclick="btn2p7()">Eu me vingo daquela pessoa de maneira pior para ela aprender a não mexer comigo!</button>
+						<button onclick="btn3p7()">Eu procuro um professor ou responsável para que possamos conversar e resolver isso da melhor maneira(sem briga)</button>
+					</div>
+					
+					<div id="divpergunta8">
+						<h2>8) Muitas dessas ofensas fazem as pessoas ficarem profundamente tristes principalmente quando há preconceito com a aparência dela.<br>E falando de aparência...
+						Eu estou gostando muito de te conhecer e na minha opnião você é uma pessoa com uma beleza muito especial!
+						Mas me fale um pouco, como você se sente sobre o seu corpo?</h2>
+						<button onclick="btn1p8()">Eu gosto de como eu sou e não mudaria nada pois cada um tem uma beleza diferente e individual</button>
+						<button onclick="btn2p8()">Tenho vergonha do meu corpo ou minha aparência</button>
+						<button onclick="btn3p8()">Me considero a pessoa mais bonita da sala e a maioria dos outros alunos são feios!</button>
+					</div>
+					
+					<div id="divpergunta9">
+						<h2>9) Julgar as pessoas pela a aparência é algo bem errado de se fazer na sala de aula. E quando estamos em casa quem diz o que é certo ou errado são nossos pais ou 
+						responsáveis não é mesmo!? Como seus pais ou responsáveis agem na maioria das vezes quando você faz algo de errado?</h2>
+						<button onclick="btn1p9()">Não fazem nada</button>
+						<button onclick="btn2p9()">Conversam comigo e/ou me deixam de castigo</button>
+						<button onclick="btn3p9()">Me batem</button>
+					</div>
+					<div id="escolha3perg9">
+						<h2>Quantas vezes te batem durante uma semana?</h2>
+						<button onclick="btn1p9e3()">Só quando faço algo muito errado</button>
+						<button onclick="btn2p9e3()">Quase todos os dias</button>
+						<button onclick="btn3p9e3()">Quando ele/ela responsável por mim bebe muito</button>
+					</div>
+					
+					<div id="divpergunta10">
+						<h2>10) Eu ficava zangado quando ficava de castigo mas depois eu percebia que eu realmente não deveria ter feito aquilo e a raiva passava. De todas as coisas na sua vida, o que te deixaria com muita raiva e o que você faria?</h2>
+						<input type="text" placeholder="Escreva aqui"></input>
+						<button type="submit" id="RespostaP10" onclick="btnEnviarP10()">Enviar</button>
+					</div>
+					
+					<div id="mensagemFinal">
+						<h2>Adorei ter conversado com você até aqui!<br>
+						Te desejo tudo de bom e se precisar de ajuda você pode ligar para 188,<br> 
+						terá pessoas muito bacanas pra te escutar e te dar apoio se precisar.<br> 
+						Um grande abraço do Smile e Tchau-Tchau !</h2>
+					</div>
+				<button id="btnReset" onclick="botaoReset()">reset</button><!--botao resetar-->
+			</div>
+						
+	</body>
+
+</HTML>
